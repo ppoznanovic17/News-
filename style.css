@@ -108,6 +108,7 @@ h1, h2 , h3 , h4 , h5, h6{
 
 .lH{
     font-size: 3rem;
+    color: #111;
 }
 
 .btn-block{
@@ -116,12 +117,16 @@ h1, h2 , h3 , h4 , h5, h6{
     text-align: center;
 }
 
-card{
+.card{
     background: #fff;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
+    color: #111;
+
 }
+
+
 
 .bg-dark{
     background: var(--dark-color);
@@ -222,6 +227,7 @@ card{
    background: #333;
     padding: 2rem;
     position: relative;
+    overflow: hidden;
 }
 
 header::before{
@@ -236,6 +242,7 @@ header::before{
 }
 
 header .podKontejner{
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
@@ -245,6 +252,7 @@ header .podKontejner{
 
 header .kontejner  .sadrzaj{
     z-index: 1;
+
 }
 
 header .kontejner  .sadrzaj p{
@@ -267,6 +275,8 @@ header .kontejner  .sadrzaj p{
     align-items: center;
     grid-column: 1/ span 2;
 }
+
+
 
 #clanci .kontejner .kontejnerArtikla > *:last-child{
     grid-column: 2/ span 2;
@@ -331,7 +341,13 @@ aside a{
 
 }
 
-
+#clanak .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.2rem;
+}
 
 
 
